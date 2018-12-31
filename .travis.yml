@@ -7,4 +7,4 @@ services:
 # https://github.com/naftulikay/travis-pls
 install: pip install travispls
 
-script: travis-pls -m 5400 ./build-docker.sh
+script: travis-pls -m 7200 ./build-docker.sh
