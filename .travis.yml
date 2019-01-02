@@ -3,8 +3,10 @@ python:
   - "3.6"
 services:
   - docker
+
+before_install: pip install pipenv && pipenv lock --requirements > requirements.txt
 # use travis-pls to force travis to behave.
 # https://github.com/naftulikay/travis-pls
-install: pip install travispls
+install: pip install travispls && pip install -r requirements.txt
 
 script: travis-pls -m 7200 ./build-docker.sh
