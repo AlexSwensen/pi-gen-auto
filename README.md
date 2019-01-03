@@ -1,7 +1,10 @@
-# pi-gen
+# pi-gen-auto
 
-_Tool used to create the raspberrypi.org Raspbian images_
+Automatically builds Raspbian images in Travis-CI and uploads them to a Digital Ocean store.
+I built this as a starting place for generating images automatically & reduce setup time on new installations, but also as a starting point for specialized Raspbian builds for individual projects.
 
+
+Original Readme:
 
 ## Dependencies
 
