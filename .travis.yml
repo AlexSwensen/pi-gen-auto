@@ -11,7 +11,7 @@ before_install:
 # https://github.com/naftulikay/travis-pls
 install:
   - pip install -r requirements.txt
-  - pip install git+https://github.com/AlexSwensen/travis-timeout
+  - pip install https://github.com/AlexSwensen/travis-timeout/archive/feature/travis-timeout.tar.gz
 
 script: travis-timeout -i 10 -m 7200 ./build-docker.sh
 
