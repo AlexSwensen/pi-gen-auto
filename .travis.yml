@@ -9,7 +9,7 @@ before_install: pip install pipenv && pipenv lock --requirements > requirements.
 # https://github.com/naftulikay/travis-pls
 install: pip install travispls && pip install -r requirements.txt
 
-script: travis-pls -m 7200 ./build-docker.sh
+script: travis-pls -m 7200 -i 300 ./build-docker.sh
 
 deploy:
   skip_cleanup: true
