@@ -10,3 +10,9 @@ before_install: pip install pipenv && pipenv lock --requirements > requirements.
 install: pip install travispls && pip install -r requirements.txt
 
 script: travis-pls -m 7200 ./build-docker.sh
+
+deploy:
+  provider: script
+  script: python upload.py
+  # on:
+    # branch: master
